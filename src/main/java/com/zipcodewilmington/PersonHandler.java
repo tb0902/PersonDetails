@@ -47,7 +47,6 @@ public class PersonHandler {
         // use the above clauses to declare for-loop signature
         // begin loop
         for (int counter = 0; counter < personArray.length; counter++) {
-            for (counter = 0; counter < personArray.length; counter++) {
                 representation = String.valueOf(personArray[counter]);
                 result += representation;
             }
@@ -61,11 +60,11 @@ public class PersonHandler {
         public String forEachLoop() {
             String eachResult = "";
             String eachRepresentation;
-
             // identify array's type
             // identify array's variable-name
             for (Person each : personArray) {
-                eachRepresentation = String.valueOf(personArray);
+
+                eachRepresentation = String.valueOf(each);
                 eachResult += eachRepresentation;
             }
                 // use the above discoveries to declare for-each-loop signature
@@ -81,4 +80,3 @@ public class PersonHandler {
             return personArray;
         }
     }
-}
